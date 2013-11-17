@@ -19,6 +19,7 @@
       ctx.drawImage(
         tape, userImage.width - newWidth - 10, userImage.height / 3, newHeight,
         newWidth);
+      $('#png-link').attr('href', c.toDataURL("image/png"));
     };
     reader.readAsDataURL(e.target.files[0]);
   });
