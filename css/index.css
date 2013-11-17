@@ -1,24 +1,36 @@
 body {
   font-family: sans-serif;
+  color: #333;
 }
 
 h1 {
   margin: 40px;
   text-align: center;
 }
+
 #display {
+  text-align: center;
   margin: 20px auto;
   position: relative;
 }
+
 canvas {
-  display: block;
   margin: 20px auto;
 }
+
 input {
   display: block;
   margin: auto;
   background-color: white;
 }
+
 img#tape {
+  display: none;
+}
+
+#hint {
+  color: #555;
+  text-align: center;
+  margin-top: 15px;
   display: none;
 }

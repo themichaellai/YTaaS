@@ -2,6 +2,7 @@
 (function() {
   var imageLoader = $('#imageLoader');
   imageLoader.bind('change', function (e) {
+    $('#hint').hide();
     var reader = new FileReader();
     reader.onload = function(event){
       var userImage = new Image();
@@ -23,4 +24,6 @@
     };
     reader.readAsDataURL(e.target.files[0]);
   });
+
+  $('#hint').fadeIn(1700);
 })();
